@@ -6,7 +6,7 @@ A sleek **web app** for nature lovers that delivers quick animal facts, real-tim
 
 ## Author
 
-**Mina Youssef Sami**
+**Wissam Antoine Estephan**
 
 ---
 
