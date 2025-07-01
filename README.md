@@ -24,7 +24,7 @@ A sleek **web app** for nature lovers that delivers quick animal facts, real-tim
 
 | File / Page       | Role in the app                                                                                               |
 | ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| **`index.html`**  | Landing hero with floating 3-D icons, featured-animals grid, and detail modal.                                |
+| **`home.html`**  | Landing hero with floating 3-D icons, featured-animals grid, and detail modal.                                |
 | **`explorer.html`** | Instant search (debounced), dynamic result cards, and deep-dive modal view.                                  |
 | **`about.html`**  | Mission statement, tech stack overview, and contact links.                                                    |
 | **`WildlifeAPI.js`** | Tiny wrapper around the API Ninjas endpoint – fetches, caches, and returns species info.                    |
