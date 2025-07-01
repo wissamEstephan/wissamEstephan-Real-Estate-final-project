@@ -24,14 +24,11 @@ A sleek **web app** for nature lovers that delivers quick animal facts, real-tim
 
 | File / Page       | Role in the app                                                                                               |
 | ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| **`home.html`**  | Landing hero with floating 3-D icons, featured-animals grid, and detail modal.                                |
-| **`explorer.html`** | Instant search (debounced), dynamic result cards, and deep-dive modal view.                                  |
-| **`about.html`**  | Mission statement, tech stack overview, and contact links.                                                    |
-| **`WildlifeAPI.js`** | Tiny wrapper around the API Ninjas endpoint – fetches, caches, and returns species info.                    |
-| **`AnimalCard.js`**  | Reusable class that builds Bootstrap cards on the fly and wires up click-to-modal.                           |
-| **`main.js`**     | Boots the landing page, loads highlights, and binds the detail modal.                                         |
-| **`explorer.js`** | Handles search queries, renders result lists, and integrates with `WildlifeAPI`.                              |
-| **`styles.css`**  | Custom palette, 3-D perspective animation, and small Bootstrap overrides.                                     |
+| **`home.html`**  | have the animation of the logo of the company.                                                                   |
+| **`add.html`** | add a house demended by the client through the company website                                                    |
+| **`buy.html`**  | show the houses already in sales, also filters the choises of house                                              |
+| **`contact.html`** | used by the client when he wants to get more infos                                                            |
+| **`house1.html`**  | example of showing the houses below the page                                                                  |
 
 ---
 
