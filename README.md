@@ -1,6 +1,8 @@
 # Wildlife Explorer
 
-A sleek **web app** for nature lovers that delivers quick animal facts, real-time search, and playful 3-D emoji animations – all with pure **HTML 5**, **CSS 3 / Bootstrap 5**, and vanilla **ES 6 JavaScript**.
+This project is a web-based real estate listing form allowing users to submit property details such as location, number of rooms, area, and price. Upon submission, a success popup confirms the listing with the entered information. The interface includes a sidebar navigation for easy access to other pages.
+
+
 
 ---
 
@@ -14,11 +16,8 @@ A sleek **web app** for nature lovers that delivers quick animal facts, real-tim
 
 | Purpose | API Service | Endpoint |
 | ------- | ----------- | -------- |
-| Species data, habitat & emoji hint | API Ninjas – Animals | `https://api.api-ninjas.com/v1/animals?name=` |
+| Real Estate data, habitat and weather | OpenWeather-API |
 
-> **Heads-up :** API Ninjas requires a free key. The first call in `WildlifeAPI.js` expects it in the `X-Api-Key` header.
-
----
 
 ## Project Map
 
@@ -34,15 +33,15 @@ A sleek **web app** for nature lovers that delivers quick animal facts, real-tim
 
 ## Notable UI / UX Touches
 
-- **3-D Orbit Animation** – CSS-only effect that makes the hero emojis “pop” off the screen.  
-- **Adaptive Layout** – Mobile-first breakpoints, off-canvas navigation, and fluid cards.
-- **Dynamic Bootstrap Modal** – Displays live animal data fetched from an API, shown only when a user interacts with a card.
+- **Responsive Sidebar Navigation** -  A collapsible sidebar with clear icons and labels ensures smooth navigation across devices.  
+- **Interactive Success Popup** -  Immediate visual feedback confirms property submission without page reloads, enhancing user confidence.
+- **Intuitive Form Layout** -  Clean grouping of fields with icons and placeholders guides users to input accurate property details effortlessly.
 
 ---
 
 ## Getting Up & Running
 
-1. **Clone** this repository or download the ZIP.  
+1. **Clone** this repository or download the file.  
 2. Open `WildlifeAPI.js` and paste your **API Ninjas key** into the `API_KEY` constant.  
 3. **Serve** the project from VS Code Live Server.  
 4. Browse to `http://localhost:<port>/index.html`
