@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HSH Real Estate | Contact</title>
+  <link rel="stylesheet" href="stylesheetcontact.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+  <script src="https://kit.fontawesome.com/dde41770fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="Images/logoproject.png" alt="Company Logo" />
+      <span>HSH Real Estate</span>
+    </div>
+    <ul>
+      <li><a href="home.html"><i class="fa-solid fa-house"></i> <span class="label">Home</span></a></li>
+      <li><a href="buy.html"><i class="fa-solid fa-cart-shopping"></i> <span class="label">Buy</span></a></li>
+      <li><a href="add.html"><i class="fa-solid fa-plus"></i> <span class="label">List Your Property</span></a></li>
+      <li><a class="active" href="contact.html"><i class="fa-solid fa-phone"></i> <span class="label">Contact Us</span></a></li>
+    </ul>
+    <button class="toggle-btn" id="toggleSidebar" aria-label="Toggle Sidebar">&#9776;</button>
+  </div>
+
+  <div class="main-content">
+    <div class="div1">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input class="input1" type="text" id="name" name="name" placeholder="Your full name" /><br /><br />
+        
+        <label for="email">Email:</label><br />
+        <input class="input1" type="email" id="email" name="email" placeholder="your.email@example.com" /><br /><br />
+        
+        <label for="message">Message:</label><br />
+        <textarea class="input3" id="message" name="message" placeholder="Write your message here..."></textarea><br /><br />
+        
+        <input class="input2" type="submit" value="Send" />
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('toggleSidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+    });
+  </script>
+
+</body>
+</html>

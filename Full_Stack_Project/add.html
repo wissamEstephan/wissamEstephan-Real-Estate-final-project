@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HSH Real Estate | List Your Property</title>
+  <link rel="stylesheet" href="stylesheetadd.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+  <script src="https://kit.fontawesome.com/dde41770fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="Images/logoproject.png" alt="Company Logo" />
+      <span>HSH Real Estate</span>
+    </div>
+    <ul>
+      <li><a href="home.html"><i class="fa-solid fa-house"></i> <span class="label">Home</span></a></li>
+      <li><a href="buy.html"><i class="fa-solid fa-cart-shopping"></i> <span class="label">Buy</span></a></li>
+      <li><a class="active" href="add.html"><i class="fa-solid fa-plus"></i> <span class="label">List Your Property</span></a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-phone"></i> <span class="label">Contact Us</span></a></li>
+    </ul>
+     <button class="toggle-btn" id="toggleSidebar" aria-label="Toggle Sidebar">&#9776;</button>
+  </div>
+  <div id="successBox" style="display:none; 
+   position: fixed; top: 20%; left: 50%; transform: translateX(-50%);
+   background: blue; color: white; padding: 20px; border-radius: 8px; 
+   box-shadow: 0 2px 10px rgba(0,0,0,0.3); z-index: 1000; max-width: 90%; text-align: center;">
+   <span id="successMessage"></span><br />
+   <button onclick="document.getElementById('successBox').style.display='none'" 
+    style="margin-top: 15px; background: white; border: none; color: black; padding: 8px 16px; cursor: pointer; border-radius: 4px;">
+    Close
+   </button>
+</div>
+
+
+  <div class="main-content">
+    <div class="div1">
+      <section class="sec1">
+        <h1 class="h1two">List Your Property Features</h1>
+        <form id="propertyForm">
+          <div>
+            <label for="fname">Your Name</label><br />
+            <input class="input1" type="text" id="fname" placeholder="First Name" required />
+            <input class="input1" type="text" placeholder="Last Name" required />
+          </div>
+          <hr />
+          <div>
+            <label for="phonenum">Your Phone Number</label><br />
+            <input class="input1" type="tel" id="phonenum" minlength="8" maxlength="10" placeholder="## ### ###" required />
+          </div>
+          <hr />
+          <div>
+            <label for="mail">Your E-Mail</label><br />
+            <input class="input1" type="email" id="mail" placeholder="youremail@gmail.com" required />
+          </div>
+          <hr />
+          <div>
+            <label for="loc">
+              <img class="img3" src="Images/location.png" alt="location" /> Location
+            </label><br />
+            <select id="loc" required>
+              <option value="Any" selected>Any</option>
+              <option>Beirut</option>
+              <option>Mount Lebanon</option>
+              <option>Keserwan-Jbeil</option>
+              <option>North</option>
+              <option>Akkar</option>
+              <option>Baalbeck-Hermel</option>
+              <option>Beqaa</option>
+              <option>Nabatieh</option>
+              <option>South</option>
+            </select>
+          </div>
+          <hr />
+          <div>
+            <label for="bed">
+              <img class="img3" src="Images/bed2.png" alt="bedroom" /> Number of Bedrooms
+            </label><br />
+            <select id="bed" required>
+              <option value="Any" selected>Any</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </div>
+          <hr />
+          <div>
+            <label for="bath">
+              <img class="img3" src="Images/bathtub2.png" alt="bathtub" /> Number of Bathrooms
+            </label><br />
+            <select id="bath" required>
+              <option value="Any" selected>Any</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </div>
+          <hr />
+          <div>
+            <label for="living">
+              <img class="img3" src="Images/couch2.png" alt="couch" /> Number of Living Rooms
+            </label><br />
+            <select id="living" required>
+              <option value="Any" selected>Any</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </div>
+          <hr />
+          <div>
+            <label for="areaa">
+              <img class="img3" src="Images/area2.png" alt="area" /> Area in m<sup>2</sup>
+            </label><br />
+            <input class="input1" type="text" id="areaa" placeholder="Area Value" required />
+          </div>
+          <hr />
+          <div>
+            <label for="price">
+              <img class="img3" src="Images/money2.png" alt="pricing" /> Price (USD)
+            </label><br />
+            <input class="input1" type="text" id="price" placeholder="Price" required />
+          </div>
+          <div class="div2">
+            <label for="forrent">For Rent (Monthly Price)</label>
+            <input type="radio" id="forrent" name="sale_rent" required />
+            <label for="forsale">For Sale</label>
+            <input type="radio" id="forsale" name="sale_rent" required />
+            <label for="negotiable">Negotiable Price</label>
+            <input type="radio" id="negotiable" name="negotiable" />
+          </div>
+          <hr />
+          <div>
+            <input class="input2" type="submit" />
+            <input class="input2" type="reset" />
+          </div>
+          <div>
+            <p class="p3">(Note that your submission will be sent by mail to the company awaiting review)</p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+  <script>
+  const sidebar = document.getElementById('sidebar');
+  const toggleBtn = document.getElementById('toggleSidebar');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+  });
+</script>
+<script>
+  document.getElementById('propertyForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    // Gather form values
+    const fname = document.getElementById('fname').value.trim();
+    const lname = this.querySelector('input[placeholder="Last Name"]').value.trim();
+    const phone = document.getElementById('phonenum').value.trim();
+    const email = document.getElementById('mail').value.trim();
+    const location = document.getElementById('loc').value;
+    const bedrooms = document.getElementById('bed').value;
+    const bathrooms = document.getElementById('bath').value;
+    const livingRooms = document.getElementById('living').value;
+    const area = document.getElementById('areaa').value.trim();
+    const price = document.getElementById('price').value.trim();
+
+    
+    const saleRentRadios = this.querySelectorAll('input[name="sale_rent"]');
+    let saleRentValue = '';
+    saleRentRadios.forEach(radio => {
+      if (radio.checked) {
+        saleRentValue = radio.id === 'forrent' ? 'For Rent' : 'For Sale';
+      }
+    });
+
+    const negotiable = this.querySelector('input[id="negotiable"]').checked ? 'Yes' : 'No';
+
+    
+    const message = `
+      Success! Your property has been listed.<br/><br/>
+      <strong>Details:</strong><br/>
+      Name: ${fname} ${lname}<br/>
+      Phone: ${phone}<br/>
+      Email: ${email}<br/>
+      Location: ${location}<br/>
+      Bedrooms: ${bedrooms}<br/>
+      Bathrooms: ${bathrooms}<br/>
+      Living Rooms: ${livingRooms}<br/>
+      Area (m²): ${area}<br/>
+      Price: $${price}<br/>
+      Sale/Rent: ${saleRentValue}<br/>
+      Negotiable: ${negotiable}
+    `;
+
+    // Show the message in the success box
+    const successBox = document.getElementById('successBox');
+    document.getElementById('successMessage').innerHTML = message;
+    successBox.style.display = 'block';
+
+    // Optionally, reset the form
+    this.reset();
+  });
+</script>
+
+
+</body>
+</html>

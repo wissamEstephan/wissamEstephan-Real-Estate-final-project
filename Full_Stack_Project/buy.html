@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HSH Real Estate | Buy</title>
+  <link rel="stylesheet" href="stylesheetbuy.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+  <script src="https://kit.fontawesome.com/dde41770fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="Images/logoproject.png" alt="Company Logo" />
+      <span>HSH Real Estate</span>
+    </div>
+    <ul>
+      <li><a href="home.html"><i class="fa-solid fa-house"></i> <span class="label">Home</span></a></li>
+      <li><a class="active" href="buy.html"><i class="fa-solid fa-cart-shopping"></i> <span class="label">Buy</span></a></li>
+      <li><a href="add.html"><i class="fa-solid fa-plus"></i> <span class="label">List Your Property</span></a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-phone"></i> <span class="label">Contact Us</span></a></li>
+    </ul>
+    <button class="toggle-btn" id="toggleSidebar">&#9776;</button>
+  </div>
+
+  <div class="main-content">
+
+    <div class="navbar" style="display:none;"></div>
+
+    <div class="div1">
+      <section class="sec1">
+        <h1 class="h1two"> Property Finder Filter </h1>
+        <form>
+          <div>
+            <label for="loc"><img class="img3" src="Images/location.png" alt="location"/> Location</label>
+            <select id="loc">
+              <option value="Any" selected>Any</option>
+              <option>Beirut</option>
+              <option>Mount Lebanon</option>
+              <option>Keserwan-Jbeil</option>
+              <option>North</option>
+              <option>Akkar</option>
+              <option>Baalbeck-Hermel</option>
+              <option>Beqaa</option>
+              <option>Nabatieh</option>
+              <option>South</option>
+            </select>
+          </div>
+          <hr>
+          
+          <div>
+            <label for="bedroomm"><img class="img3" src="Images/bed2.png" alt="bedroom"/> Number of Bedrooms</label>
+            <select id="bed">
+              <option value="Any" selected>Any</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </div>
+          <hr>
+
+          <div>
+            <label for="bath"><img class="img3" src="Images/bathtub2.png" alt="bathtub"/> Number of Bathrooms</label>
+            <select id="bath">
+              <option value="Any" selected>Any</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </div>
+          <hr>
+
+          <div>
+            <label for="living"><img class="img3" src="Images/couch2.png" alt="couch"/> Number of Living Rooms</label>
+            <select id="living">
+              <option value="Any" selected>Any</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </div>
+          <hr>
+
+          <div>
+            <label for="areaa"><img class="img3" src="Images/area2.png" alt="area"/> Area Range in m<sup>2</sup></label>
+            <input class="input1" type="text" id="aarea" placeholder="Min-Value" />
+            <input class="input1" type="text" placeholder="Max-Value" />
+          </div>
+          <hr>
+
+          <div>
+            <label for="price"><img class="img3" src="Images/money2.png" alt="pricing"/> Price Range (USD)</label>
+            <input class="input1" type="text" id="price" placeholder="Min-Value" />
+            <input class="input1" type="text" placeholder="Max-Value" />
+          </div>
+
+          <div>
+            <input class="input2" type="submit" />
+            <input class="input2" type="reset" />
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="div2">
+      <section class="sec2">
+        <a href="house1.html" target="_blank">
+          <img class="imgb" src="Images/image15.jpeg" alt="living room pic" />
+          <p class="psec2"><img class="img3" src="Images/location.png" alt="loc" /> Location : Beirut</p><hr>
+          <p class="psec2"><img class="img3" src="Images/bathtub2.png" alt="bathtub" /> Bathrooms : 3 | <img class="img3" src="Images/couch2.png" alt="couch" /> Living Rooms : 2</p><hr>
+          <p class="psec2"><img class="img3" src="Images/bed2.png" alt="bed" /> Bedrooms : 3 | <img class="img3" src="Images/area2.png" alt="area" /> Area : 320m<sup>2</sup></p>
+        </a>
+      </section>
+      <section class="sec2">
+        <a href="house2.html" target="_blank">
+          <img class="imgb" src="Images/image16.jpeg" alt="living room pic" height="184px" />
+          <p class="psec2"><img class="img3" src="Images/location.png" alt="loc" /> Location : Mount Lebanon</p><hr>
+          <p class="psec2"><img class="img3" src="Images/bathtub2.png" alt="bathtub" /> Bathrooms : 1 | <img class="img3" src="Images/couch2.png" alt="couch" /> Living Rooms : 1</p><hr>
+          <p class="psec2"><img class="img3" src="Images/bed2.png" alt="bed" /> Bedrooms : 2 | <img class="img3" src="Images/area2.png" alt="area" /> Area : 130m<sup>2</sup></p>
+        </a>
+      </section>
+      <section class="sec2">
+        <a href="house3.html" target="_blank">
+          <img class="imgb" src="Images/image17.jpeg" alt="living room pic" />
+          <p class="psec2"><img class="img3" src="Images/location.png" alt="loc" /> Location : Keserwan-Jbeil</p><hr>
+          <p class="psec2"><img class="img3" src="Images/bathtub2.png" alt="bathtub" /> Bathrooms : 4 | <img class="img3" src="couch2.png" alt="couch" /> Living Rooms : 2</p><hr>
+          <p class="psec2"><img class="img3" src="Images/bed2.png" alt="bed" /> Bedrooms : 4 | <img class="img3" src="area2.png" alt="area" /> Area : 460m<sup>2</sup></p>
+        </a>
+      </section>
+    </div>
+
+    <div class="div9">
+      <div class="div3">
+        <div class="div10">
+          <p class="p5">
+            <img class="img5" src="Images/phonedown.png" alt="blue phone logo" /> Our Phone Numbers :<br />
+          </p>
+          <p class="p6">(+961) 01 467 398</p>
+          <p class="p6">(+961) 04 200 123</p>
+          <p class="p6">(+961) 71 800 331</p>
+        </div>
+        <div class="div10">
+          <p class="p5">Our Socials :<br /></p>
+          <p class="p5"><img class="img5" src="Images/instacolored.png" alt="insta logo" /> @HSH_RealEstate</p>
+          <p class="p5"><img class="img5" src="Images/Twitter.png" alt="twitter logo" /> @HshREstate</p>
+        </div>
+        <div class="div10">
+          <p class="p5"><img class="img5" src="Images/locblue.png" alt="location dot" /> Location :</p>
+          <p class="p6">Beirut , Hamra Street<br /></p>
+          <p class="p6">Bldg N° 25<br /></p>
+          <p class="p6">Floors N° 1, 2 and 3</p>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- end main-content -->
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('toggleSidebar');
+
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+    });
+  </script>
+</body>
+</html>

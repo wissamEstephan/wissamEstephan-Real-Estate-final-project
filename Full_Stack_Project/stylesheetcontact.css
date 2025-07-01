@@ -1,0 +1,83 @@
+body {
+    background-image: url(Images/image3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.div1 {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 3px groove black;
+    border-radius: 5px;
+    margin: 180px auto 50px auto; /* center horizontally with auto left/right */
+    padding: 15px;
+    min-height: 600px;
+    max-width: 700px;
+}
+
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: large;
+    color: black;
+    margin-left: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    border: 1.4px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: medium;
+    box-sizing: border-box;
+    margin-top: 5px;
+    font-family: inherit;
+}
+
+textarea.input3 {
+    height: 120px;
+    resize: vertical;
+}
+
+input.input2[type="submit"] {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+input.input2[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+@media (max-width: 800px) {
+    .div1 {
+        margin: 100px 20px 20px 20px;
+        max-width: 95%;
+    }
+}

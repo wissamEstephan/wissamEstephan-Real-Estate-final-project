@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HSH Real Estate | House 1</title>
+  <link rel="stylesheet" href="house1.css" />
+  <link rel="stylesheet" href="sidebar.css" />
+  <script src="https://kit.fontawesome.com/dde41770fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="Images/logoproject.png" alt="Company Logo" />
+      <span>HSH Real Estate</span>
+    </div>
+    <ul>
+      <li><a href="home.html"><i class="fa-solid fa-house"></i> <span class="label">Home</span></a></li>
+      <li><a href="buy.html"><i class="fa-solid fa-cart-shopping"></i> <span class="label">Buy</span></a></li>
+      <li><a href="rent.html"><i class="fa-solid fa-building"></i> <span class="label">Rent</span></a></li>
+      <li><a href="add.html"><i class="fa-solid fa-plus"></i> <span class="label">List Your Property</span></a></li>
+      <li><a href="contact.html"><i class="fa-solid fa-phone"></i> <span class="label">Contact Us</span></a></li>
+    </ul>
+    <button class="toggle-btn" id="toggleSidebar" aria-label="Toggle Sidebar">&#9776;</button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="content-wrapper">
+      <div class="overlay"></div>
+      <div class="div1">
+        <section class="sec1">
+          <div class="div2">
+            <img src="Images/image15.jpeg" alt="Living Room" />
+            <img src="Images/kitchen1.jpeg" alt="Kitchen" />
+            <img src="Images/bedroom1.jpeg" alt="bedroom" />
+          </div>
+          <div class="div2">
+            <img src="Images/bedroom2.jpeg" alt="bedroom 2" />
+            <img src="Images/livingroom1.jpeg" alt="living room 2" />
+            <img src="Images/bathroom1.jpeg" alt="bathroom parking" />
+          </div>
+          <hr />
+          <p class="psec2">A beautiful apartment in Beirut.</p>
+          <p class="psec2">
+            With its strategic location, this apartment offers 2 living rooms, 3 bedrooms (2 Master), 3 bathrooms (1 guest), and a kitchen + a private parking.
+          </p>
+          <p class="psec2">
+            With a total area of 320 m<sup>2</sup>, this apartment is an ideal accommodation for you and your family.
+          </p>
+          <p class="psec2">
+            Priced at $310,000 USD, you can now make this hot deal yours. Please proceed to <a href="contact.html" target="_blank">contact us</a> if you're interested, to link you up with the seller.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const toggleBtn = document.getElementById('toggleSidebar');
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+    });
+  </script>
+</body>
+</html>
