@@ -16,7 +16,7 @@ This project is a web-based real estate listing form allowing users to submit pr
 
 | Purpose | API Service | Endpoint |
 | ------- | ----------- | -------- |
-| Real Estate data, habitat and weather , OpenWeather-API |
+| Real Estate data | habitat and weather | OpenWeather-API |
 
 
 ## Project Map
