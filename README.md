@@ -23,7 +23,7 @@ This project is a web-based real estate listing form allowing users to submit pr
 
 | File / Page       | Role in the app                                                                                               |
 | ----------------- | -------------------------------------------------------------------------------------------------------------- |
-| **`home.html`**  | have the animation of the logo of the company.                                                                   |
+| **`index.html`**  | have the animation of the logo of the company.                                                                   |
 | **`add.html`** | add a house demended by the client through the company website                                                    |
 | **`buy.html`**  | show the houses already in sales, also filters the choises of house                                              |
 | **`contact.html`** | used by the client when he wants to get more infos                                                            |
