@@ -42,6 +42,9 @@ This project is a web-based real estate listing form allowing users to submit pr
 ## Getting Up & Running
 
 1. **Clone** this repository or download the file.  
-2. Open `home.html` and paste your **API Weather key** into the `apiKey` constant, in the line 201.  
-3. **Serve** the project from VS Code Live Server.  
+2. Open `index.html` and paste your **API Weather key** into the `apiKey` constant, in the line 201.  
+3. **Serve** the project from VS Code Live Server.
+
+or just open this link:https://wissamEstephan.github.io/wissamEstephan-Real-Estate-final-project/
+
 ---
